@@ -1,11 +1,11 @@
 import React from 'react';
+import './Title.css';
 
 class Titles extends React.Component {
   render(){
     return(
       <div>
-        <h1> Weather Finder </h1>
-        <p> Find tempereature, conditions and more... </p>
+        <p className="weather-paragraph"> Check the wether in your city </p>
       </div>
     );
   }

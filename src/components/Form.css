@@ -1,0 +1,13 @@
+input {
+  height: 4vh;
+}
+
+button {
+  margin-left: 1em;
+  color: #fff;
+  background-color: #a5a3a3;
+  border: none;
+  height: 2em;
+  width: 8em;
+  border-radius: 5px;
+}

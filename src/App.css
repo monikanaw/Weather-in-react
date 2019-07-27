@@ -1,0 +1,9 @@
+body{
+  background-image: radial-gradient(circle, #c8e0ea, #fff);
+ background-repeat: no-repeat;
+ height: 100vh;
+
+}
+.App {
+ margin: 4em;
+}

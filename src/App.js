@@ -17,11 +17,10 @@ class App extends React.Component {
   getWeather = async (event) => {
     event.preventDefault();
     const city = event.target.city.value;
-    const country = event.target.country.value;
-    const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=7ea00d73a83a2dc576cf68ab20a5f063`);
+    const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=7ea00d73a83a2dc576cf68ab20a5f063`);
     const data = await api.json();
 
-    if( city && country) {
+    if( city) {
       console.log(data);
       this.setState({
         city: data.name,
@@ -39,7 +38,7 @@ class App extends React.Component {
       description: undefined,
       humidity: undefined,
       error: "Please input your city"
-      })   
+      })
     }
   }
 
