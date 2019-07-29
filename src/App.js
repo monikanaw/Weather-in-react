@@ -59,14 +59,13 @@ getWeather = (event) => {
           country={weather.sys.country}
           temperature={weather.main.temp}
           description={weather.weather[0].description}
-          humidity={weather.main.humidity}/>
-
+          humidity={weather.main.humidity} />
        });
       }
       else{
-       weather =
-         <Weather
-          error= {this.state.error} />
+       weather = <Weather
+          error= {this.state.error}
+           />
       }
 
    return(

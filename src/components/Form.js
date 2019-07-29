@@ -3,14 +3,28 @@ import PropTypes from 'prop-types';
 import './Form.css';
 
 class Form extends React.Component {
+
  componentDidMount() {
    this.inputElement.focus();
  }
 
+ clearInput = (event) => {
+   event.target.reset()
+ }
+
+ click = (event) => {
+   this.props.getWeather(event)
+   this.clearInput(event)
+
+ }
+
+
   render(){
+
     return(
-      <form onSubmit ={this.props.getWeather}>
+      <form onSubmit={this.click}>
         <input
+        id="form"
         ref={(inputEl) => {this.inputElement = inputEl}}
         type="text"
         name="city"
