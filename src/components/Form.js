@@ -9,7 +9,7 @@ class Form extends React.Component {
 
   render(){
     return(
-      <form onSubmit={this.props.getWeather}>
+      <form onSubmit ={this.props.getWeather}>
         <input
         ref={(inputEl) => {this.inputElement = inputEl}}
         type="text"
