@@ -18,8 +18,8 @@ class Weather extends React.Component {
        { this.props.temperature && <p>Temperature: {celsius}°C </p>}
        { this.props.description && <p>Description: { this.props.description }</p>}
        { this.props.humidity && <p>Humidity: { this.props.humidity }% </p>}
-       { this.props.icon && <p className="icon"> <img      src={`http://openweathermap.org/img/w/${this.props.icon}.png`}
-         alt="wthr img" /></p>}
+       { this.props.icon && <p className="icon"> <img      src={`http://openweathermap.org/img/wn/${this.props.icon}@2x.png`}
+         alt="icon" /></p>}
        { this.props.error && <p>{this.props.error} </p>}
       </div>
     );
