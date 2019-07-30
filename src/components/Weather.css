@@ -1,0 +1,13 @@
+.weather {
+  position: relative;
+  margin-top: 4em;
+
+}
+
+.icon img {
+  position: absolute;
+  top: 1vh;
+  left: 15vw;
+  height: 4em;
+  width: 4em;
+}

@@ -46,6 +46,8 @@ getWeather = (event) => {
     })
 };
 
+
+
   render(){
 
    let weather = null;
@@ -59,7 +61,8 @@ getWeather = (event) => {
           country={weather.sys.country}
           temperature={weather.main.temp}
           description={weather.weather[0].description}
-          humidity={weather.main.humidity} />
+          humidity={weather.main.humidity}
+          icon={weather.weather[0].icon}/>
        });
       }
       else{
