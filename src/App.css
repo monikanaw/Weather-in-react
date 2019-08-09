@@ -1,9 +1,15 @@
 body{
-  background-image: radial-gradient(circle, #8fb3c2, #fff);
+ background-image: radial-gradient(circle, #8fb3c2, #fff);
  background-repeat: no-repeat;
- height: 100vh;
-
+ min-height: 100vh;
 }
 .App {
  margin: 5em 8em;
+}
+
+@media (max-width: 750px) and (orientation: portrait) {
+  .App{
+    margin: 5em auto;
+    text-align: center;
+  }
 }

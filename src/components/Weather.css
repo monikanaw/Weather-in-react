@@ -1,6 +1,7 @@
 .weather {
   position: relative;
   margin-top: 4em;
+  padding-bottom: 5em;
 }
 
 .icon img {
@@ -9,4 +10,18 @@
   left: 14em;
   height: 8em;
   width: 8em;
+}
+
+@media (max-width: 750px) and (orientation: portrait) {
+  .weather {
+    padding-top: 7em;
+  }
+
+  .icon img {
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    height: 8em;
+    width: 8em;
+  }
 }
