@@ -9,9 +9,13 @@
   left: 13em;
   height: 8em;
   width: 8em;
+  z-index: 4;
 }
 
 @media (max-width: 750px) and (orientation: portrait) {
-
+  icon img {
+    top: 1em;
+    left: 1em;
+  }
 
 }

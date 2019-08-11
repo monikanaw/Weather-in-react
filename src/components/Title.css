@@ -14,5 +14,11 @@
 }
 
 @media (max-width: 750px) and (orientation: portrait) {
+  .title {
+    font-size: 2.5em;
+  }
+  .subtitle {
+    font-size: 1.2em;
+  }
 
 }

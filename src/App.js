@@ -2,8 +2,10 @@ import React from 'react';
 import Titles from './components/Titles.js';
 import Form from './components/Form.js';
 import Weather from './components/Weather.js';
+import Aux from './hoc/Aux.js';
 import './App.css';
 import axios from 'axios';
+
 
 class App extends React.Component {
 
@@ -72,13 +74,13 @@ getWeather = (event) => {
       }
 
    return(
-      <div className="App">
+      <Aux className="App">
        <Titles />
-       <p className="weather-table">
+       <div className="weather-table">
          <Form getWeather={this.getWeather} />
           {weather}
-        </p>
-      </div>
+        </div>
+      </Aux>
     );
   }
 }

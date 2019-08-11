@@ -21,7 +21,7 @@ class Form extends React.Component {
   render(){
     return(
       <form onSubmit={this.click}>
-      <p className="description-to-form"> In order to check the weather in your city input name of your city and click search. </p>
+        <p className="description-to-form"> In order to check the weather in your city input name of your city and click search. </p>
         <input
         id="form"
         ref={(inputEl) => {this.inputElement = inputEl}}
