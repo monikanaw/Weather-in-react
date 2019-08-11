@@ -74,8 +74,10 @@ getWeather = (event) => {
    return(
       <div className="App">
        <Titles />
-       <Form getWeather={this.getWeather} />
-        {weather}
+       <p className="weather-table">
+         <Form getWeather={this.getWeather} />
+          {weather}
+        </p>
       </div>
     );
   }

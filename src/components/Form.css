@@ -1,21 +1,26 @@
 input {
   height: 4vh;
   max-height: 25px;
+  margin-left:0.5em;
 }
 
 button {
   margin-left: 1em;
   color: #fff;
-  background-color: #a5a3a3;
+  background-color: #63535f;
   border: none;
   height: 2em;
   width: 8em;
   border-radius: 5px;
 }
 
+.description-to-form {
+  max-width: 90%;
+  margin: 2em auto;
+  text-align: center;
+}
+
 
 @media (max-width: 750px) and (orientation: portrait) {
- button {
-   margin-top: 1em;
- }
+
 }

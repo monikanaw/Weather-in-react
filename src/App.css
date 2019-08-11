@@ -1,15 +1,24 @@
 body{
- background-image: radial-gradient(circle, #8fb3c2, #fff);
+ background-image: url("grains.jpg");
  background-repeat: no-repeat;
  min-height: 100vh;
+ background-position: center left;
 }
 .App {
- margin: 5em 8em;
+ display: flex;
+}
+
+.weather-table {
+  margin-top: 5em;
+  background-color: white;
+  border: 1px solid black;
+  width: 30%;
+  height: 75vh;
+  border-radius: 15px;
+  position: relative;
 }
 
 @media (max-width: 750px) and (orientation: portrait) {
-  .App{
-    margin: 5em auto;
-    text-align: center;
-  }
+
+
 }
