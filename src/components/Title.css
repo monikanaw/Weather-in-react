@@ -14,7 +14,7 @@
 }
 
 
-@media (max-width: 550px) and (orientation: portrait) {
+@media (max-width: 550px) and (min-height: 100px) and (orientation: portrait) {
   .title {
     font-size: 2.5em;
   }
@@ -40,7 +40,7 @@
  }
 }
 
-@media (min-width: 560px) and  (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
   .weather-paragraph {
     flex: 0 0 35vw;
   }

@@ -20,7 +20,7 @@ body{
   position: relative;
 }
 
-@media (max-width: 550px) and (orientation: portrait) {
+@media (max-width: 550px) and (min-height: 100px) and (orientation: portrait) {
   .App {
    flex-direction: column;
   }
@@ -64,7 +64,7 @@ body{
   }
 }
 
-@media (min-width: 560px) and (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
   .weather-table {
     margin: 9em 1em;
     min-height: 500px;

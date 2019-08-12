@@ -12,7 +12,7 @@
   z-index: 4;
 }
 
-@media (max-width: 550px) and (orientation: portrait) {
+@media (max-width: 550px) and (min-height: 100px) and (orientation: portrait) {
   .icon img {
     top: 15em;
     left: 10em;
@@ -43,7 +43,7 @@
   }
 }
 
-@media (min-width: 560px) and  (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
  .icon img {
    top: 12em;
    left: 9em;

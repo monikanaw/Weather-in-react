@@ -21,7 +21,7 @@ button {
 }
 
 
-@media (max-width: 550px) and (orientation: portrait) {
+@media (max-width: 550px) and (min-height: 100px) and (orientation: portrait) {
  button {
    margin-top: 1em;
  }
@@ -37,7 +37,7 @@ button {
     text-align: center;
   }
 }
-@media (min-width: 560px) and (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
  button {
   margin-top: 1em;
  }
