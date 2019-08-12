@@ -12,14 +12,14 @@
   z-index: 4;
 }
 
-@media (max-width: 550px) and (min-height: 100px) and (orientation: portrait) {
+@media (max-width: 550px) {
   .icon img {
     top: 15em;
     left: 10em;
   }
 }
 
-@media (min-width: 551px) and (max-width: 850px) and (orientation: portrait) {
+@media (min-width: 551px) and (max-width: 850px){
   .weather {
     font-size: 1.2em;
     position: absolute;
@@ -27,7 +27,7 @@
   }
   .icon img {
     top: 1em;
-    left: 10em;
+    left: 9em;
   }
 }
 
@@ -41,11 +41,4 @@
     top: 1em;
     left: 10em;
   }
-}
-
-@media (max-width: 1000px) and (orientation: landscape) {
- .icon img {
-   top: 12em;
-   left: 9em;
- }
 }

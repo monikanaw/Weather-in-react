@@ -14,44 +14,35 @@ body{
   background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid black;
   width: 30%;
-  height: 75vh;
-  max-height: 500px;
+  height: 500px;
   border-radius: 15px;
   position: relative;
 }
 
-@media (max-width: 550px) and (min-height: 100px) and (orientation: portrait) {
+@media (max-width: 550px) {
   .App {
    flex-direction: column;
   }
   .weather-table {
     margin: 3em auto 4em auto;
     width: 85%;
-    height: 75vh;
-    max-height: 500px;
-    min-height: 500px;
-    min-width: 300px;
   }
 }
 
-@media (min-width: 551px) and (max-width: 850px) and (orientation: portrait) {
+@media (min-width: 551px) and (max-width: 850px){
   .App {
    flex-direction: column;
   }
   .weather-table {
     margin: 3em auto 4em auto;
     width: 65%;
-    height: 45vh;
-    max-height: 500px;
   }
 }
 
-@media (min-width: 851px) and (max-width: 1200px) and (orientation: portrait) {
+@media (min-width: 851px) and (max-width: 1200px){
   .weather-table {
     margin: 13em auto auto;
     width: 40vw;
-    height: 50vh;
-    max-height: 500px;
   }
 }
 
@@ -59,15 +50,5 @@ body{
   .weather-table {
     margin-top: 12em;
     width: 30%;
-    height: 50vh;
-    max-height: 500px;
-  }
-}
-
-@media (max-width: 1000px) and (orientation: landscape) {
-  .weather-table {
-    margin: 9em 1em;
-    min-height: 500px;
-    width: 45vw;
   }
 }

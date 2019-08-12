@@ -14,7 +14,7 @@
 }
 
 
-@media (max-width: 550px) and (min-height: 100px) and (orientation: portrait) {
+@media (max-width: 550px) {
   .title {
     font-size: 2.5em;
   }
@@ -22,7 +22,7 @@
     font-size: 1.2em;
   }
 }
-@media (min-width: 851px) and (max-width: 1200px) and (orientation: portrait) {
+@media (min-width: 851px) and (max-width: 1200px) {
   .weather-paragraph {
     flex: 0 0 40vw;
     margin-top: 15em;
@@ -38,16 +38,4 @@
  .weather-paragraph {
    margin-top: 14em;
  }
-}
-
-@media (max-width: 1000px) and (orientation: landscape) {
-  .weather-paragraph {
-    flex: 0 0 35vw;
-  }
-  .title {
-    font-size: 3em;
-  }
-  .subtitle {
-    font-size: 1em;
-  }
 }
