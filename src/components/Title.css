@@ -13,12 +13,41 @@
   margin-top: -1em;
 }
 
-@media (max-width: 750px) and (orientation: portrait) {
+
+@media (max-width: 550px) and (orientation: portrait) {
   .title {
     font-size: 2.5em;
   }
   .subtitle {
     font-size: 1.2em;
   }
+}
+@media (min-width: 851px) and (max-width: 1200px) and (orientation: portrait) {
+  .weather-paragraph {
+    flex: 0 0 40vw;
+    margin-top: 15em;
+  }
+  .title {
+    font-size: 3em;
+  }
+  .subtitle {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1600px) {
+ .weather-paragraph {
+   margin-top: 14em;
+ }
+}
 
+@media (max-width: 1050px) and (orientation: landscape) {
+  .weather-paragraph {
+    flex: 0 0 35vw;
+  }
+  .title {
+    font-size: 3em;
+  }
+  .subtitle {
+    font-size: 1em;
+  }
 }

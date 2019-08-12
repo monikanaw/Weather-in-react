@@ -5,17 +5,47 @@
 
 .icon img {
   position: absolute;
-  top: 11em;
-  left: 13em;
+  top: 10em;
+  left: 12em;
   height: 8em;
   width: 8em;
   z-index: 4;
 }
 
-@media (max-width: 750px) and (orientation: portrait) {
-  icon img {
-    top: 1em;
-    left: 1em;
+@media (max-width: 550px) and (orientation: portrait) {
+  .icon img {
+    top: 15em;
+    left: 10em;
   }
+}
 
+@media (min-width: 551px) and (max-width: 850px) and (orientation: portrait) {
+  .weather {
+    font-size: 1.2em;
+    position: absolute;
+    left: 2em;
+  }
+  .icon img {
+    top: 1em;
+    left: 10em;
+  }
+}
+
+@media (min-width: 1600px) {
+  .weather {
+    font-size: 1.3em;
+    position: absolute;
+    left: 3em;
+  }
+  .icon img {
+    top: 1em;
+    left: 10em;
+  }
+}
+
+@media (max-width: 1050px) and (orientation: landscape) {
+ .icon img {
+   top: 14em;
+   left: 9em;
+ }
 }

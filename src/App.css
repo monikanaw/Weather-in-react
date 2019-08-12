@@ -18,15 +18,52 @@ body{
   position: relative;
 }
 
-@media (max-width: 750px) and (orientation: portrait) {
+@media (max-width: 550px) and (orientation: portrait) {
   .App {
    flex-direction: column;
   }
   .weather-table {
-    margin-top: 3em;
-    margin-bottom: 4em;
-    width: 80%;
+    margin: 3em auto 4em auto;
+    width: 85%;
     height: 75vh;
+    max-height: 500px;
   }
+}
 
+@media (min-width: 551px) and (max-width: 850px) and (orientation: portrait) {
+  .App {
+   flex-direction: column;
+  }
+  .weather-table {
+    margin: 3em auto 4em auto;
+    width: 65%;
+    height: 45vh;
+    max-height: 500px;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1200px) and (orientation: portrait) {
+  .weather-table {
+    margin: 13em auto auto;
+    width: 40vw;
+    height: 50vh;
+    max-height: 500px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .weather-table {
+    margin-top: 12em;
+    width: 30%;
+    height: 50vh;
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 1050px) and (orientation: landscape) {
+  .weather-table {
+    margin: 9em 1em;
+    min-height: 500px;
+    width: 45vw;
+  }
 }

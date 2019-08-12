@@ -21,6 +21,24 @@ button {
 }
 
 
-@media (max-width: 750px) and (orientation: portrait) {
+@media (max-width: 550px) and (orientation: portrait) {
+ button {
+   margin-top: 1em;
+ }
+}
 
+@media (min-width: 551px) and (max-width: 850px) and (orientation: portrait) {
+ form {
+   text-align: center;
+ }
+}
+@media (min-width: 1600px) {
+  form {
+    text-align: center;
+  }
+}
+@media (max-width: 1050px) and (orientation: landscape) {
+ button {
+  margin-top: 1em;
+ }
 }
