@@ -2,7 +2,8 @@ import React from 'react';
 import Titles from './components/Titles.js';
 import Form from './components/Form.js';
 import Weather from './components/Weather.js';
-import Aux from './hoc/Aux.js';
+// import Aux from './hoc/Aux.js';
+import WithClass from './hoc/WithClass';
 import './App.css';
 import axios from 'axios';
 
@@ -74,13 +75,13 @@ getWeather = (event) => {
       }
 
    return(
-      <Aux className="App">
+      <WithClass classes={"App"}>
        <Titles />
        <div className="weather-table">
          <Form getWeather={this.getWeather} />
           {weather}
         </div>
-      </Aux>
+      </WithClass>
     );
   }
 }
