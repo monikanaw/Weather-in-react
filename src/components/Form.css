@@ -37,7 +37,7 @@ button {
     text-align: center;
   }
 }
-@media (max-width: 1050px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
  button {
   margin-top: 1em;
  }

@@ -14,6 +14,7 @@ body{
   border: 1px solid black;
   width: 30%;
   height: 75vh;
+  max-height: 500px;
   border-radius: 15px;
   position: relative;
 }
@@ -60,7 +61,7 @@ body{
   }
 }
 
-@media (max-width: 1050px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
   .weather-table {
     margin: 9em 1em;
     min-height: 500px;

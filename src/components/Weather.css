@@ -43,9 +43,9 @@
   }
 }
 
-@media (max-width: 1050px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
  .icon img {
-   top: 14em;
+   top: 12em;
    left: 9em;
  }
 }
