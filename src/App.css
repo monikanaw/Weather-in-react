@@ -2,6 +2,7 @@ body{
  background-image: url("grains.jpg");
  background-repeat: no-repeat;
  min-height: 100vh;
+ max-width: 100vw;
  background-position: center left;
 }
 .App {
@@ -28,6 +29,8 @@ body{
     width: 85%;
     height: 75vh;
     max-height: 500px;
+    min-height: 500px;
+    min-width: 300px;
   }
 }
 
