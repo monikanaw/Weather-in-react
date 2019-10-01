@@ -41,7 +41,7 @@ body{
 
 @media (min-width: 851px) and (max-width: 1200px){
   .weather-table {
-    margin: 13em auto auto;
+    margin: 13em auto 5em auto;
     width: 40vw;
   }
 }

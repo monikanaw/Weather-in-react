@@ -2,28 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Weather.css';
 
-class Weather extends React.Component {
+const Weather = (props) => {
 
-  render(){
     function toCelsius(kelvin) {
      return Math.round(kelvin - 273);
     }
 
-    let celsius = toCelsius(this.props.temperature);
+    let celsius = toCelsius(props.temperature);
+
 
     return(
       <div className="weather">
-       { this.props.city && <p>City: { this.props.city }</p>}
-       { this.props.country && <p>Country: { this.props.country }</p>}
-       { this.props.temperature && <p>Temperature: {celsius}°C </p>}
-       { this.props.description && <p>Description: { this.props.description }</p>}
-       { this.props.humidity && <p>Humidity: { this.props.humidity }% </p>}
-       { this.props.icon && <p className="icon"> <img      src={`https://openweathermap.org/img/wn/${this.props.icon}@2x.png`}
+       { props.city && <p>City: { props.city }</p>}
+       { props.country && <p>Country: { props.country }</p>}
+       { props.temperature && <p>Temperature: {celsius}°C </p>}
+       { props.description && <p>Description: { props.description }</p>}
+       { props.humidity && <p>Humidity: { props.humidity }% </p>}
+       { props.icon && <p className="icon"> <img      src={`https://openweathermap.org/img/wn/${props.icon}@2x.png`}
          alt="icon" /></p>}
-       { this.props.error && <p>{this.props.error} </p>}
+       { props.error && <p>{props.error} </p>}
       </div>
     );
-  };
 }
 
 Weather.propTypes = {
