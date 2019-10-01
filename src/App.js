@@ -2,7 +2,6 @@ import React from 'react';
 import Titles from './components/Titles.js';
 import Form from './components/Form.js';
 import Weather from './components/Weather.js';
-// import Aux from './hoc/Aux.js';
 import WithClass from './hoc/WithClass';
 import './App.css';
 import axios from 'axios';
@@ -11,8 +10,8 @@ import axios from 'axios';
 class App extends React.Component {
 
   state ={
-    weather:[],
-    error: false
+    weather: undefined,
+    error: undefined
   }
 
 getWeather = (event) => {
@@ -33,7 +32,7 @@ getWeather = (event) => {
         console.log(`404`);
         this.setState(prevState => {
           return{
-            weather:[],
+            weather: undefined,
             error: "We don't have your city, please try again"
           }
         })
@@ -41,7 +40,7 @@ getWeather = (event) => {
        console.log('400');
        this.setState(prevState => {
          return{
-           weather: [],
+           weather: undefined,
            error: "Please input name of your city"
          };
        })
@@ -50,12 +49,10 @@ getWeather = (event) => {
 };
 
 
-
   render(){
-
    let weather = null;
 
-   if(!this.state.error){
+   if(!this.state.error && this.state.weather){
       weather =
          this.state.weather.map(weather => {
           return <Weather
