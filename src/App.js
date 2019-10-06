@@ -19,32 +19,18 @@ getWeather = (event) => {
   const city = event.target.city.value;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=7ea00d73a83a2dc576cf68ab20a5f063`;
   axios.get(url)
-  .then(response =>
-    this.setState(prevState => {
-      return {
-        weather: [response.data],
-        error: false
-      }
-    })
-  )
+  .then(response => {
+    const newState = Object.assign({}, this.state, {weather: [response.data], error: false});
+    this.setState(newState)
+  })
   .catch(error =>{
      if(error.response.status === 404){
-        console.log(`404`);
-        this.setState(prevState => {
-          return{
-            weather: undefined,
-            error: "We don't have your city, please try again"
-          }
-        })
+         const newState = Object.assign({}, this.state, {weather: undefined, error: "We don't have your city, please try again"});
+         this.setState(newState)
      } else if(error.response.status === 400) {
-       console.log('400');
-       this.setState(prevState => {
-         return{
-           weather: undefined,
-           error: "Please input name of your city"
-         };
-       })
-     };
+         const newState = Object.assign({}, this.state, {weather: undefined, error: "Please input name of your city"});
+         this.setState(newState)
+       }
     })
 };
 
